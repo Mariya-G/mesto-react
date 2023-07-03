@@ -11,9 +11,3 @@
 * Медиазпросы;
 * Java Script;
 * React
-
-
-**Ссылка на сайт**
-
-[https://mariya-g.github.io/mesto-react/]
-
