@@ -3,7 +3,6 @@ class Api {
     this._baseUrl = options.baseUrl;
     this._headers = options.headers;
   }
-  
   _checkResponse(res) {
     if (res.ok) {
         return res.json();
@@ -39,7 +38,6 @@ class Api {
       headers: this._headers
     })
     .then(res => this._checkResponse(res));
-    
   }
 
   // Ставим лайк карточке
