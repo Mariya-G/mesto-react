@@ -24,7 +24,7 @@ class Api {
       method: 'POST',
       headers: this._headers,
       body: JSON.stringify({
-        name: data.name,
+        name: data.title,
         link: data.link
       })
     })
@@ -40,19 +40,10 @@ class Api {
     .then(res => this._checkResponse(res));
   }
 
-  // Ставим лайк карточке
-  setLike(cardId) {
+// Статус лайка
+  changeLikeCardStatus(cardId, isLiked) {
     return fetch(`${this._baseUrl}/cards/${cardId}/likes`, {
-      method: 'PUT',
-      headers: this._headers
-    })
-    .then(res => this._checkResponse(res));
-  }
-
-// Удаляем лайк
-  deleteLike(cardId) {
-    return fetch(`${this._baseUrl}/cards/${cardId}/likes`, {
-      method: 'DELETE',
+      method: isLiked ? 'PUT' : 'DELETE',
       headers: this._headers
     })
     .then(res => this._checkResponse(res));
@@ -72,8 +63,8 @@ class Api {
       method: 'PATCH',
       headers: this._headers,
       body: JSON.stringify({
-        name: data.username,
-        about: data.job
+        name: data.name,
+        about: data.about
       })
       
     })
