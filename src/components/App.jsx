@@ -20,7 +20,7 @@ function App() {
   const [cardId, setCardId] = React.useState('');
   const [isDeletePopupOpen, setDeletePopupOpen] = React.useState(false);
   const [currentUser, setCurrentUser] = React.useState({
-    avatar: '../images/loading.gif',
+    avatar: '../images/avatar.jpg',
     name: 'Загрузка',
     about: 'Загрузка',
     _id: ''
