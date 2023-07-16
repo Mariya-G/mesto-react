@@ -30,7 +30,8 @@ function AddPlacePopup (props) {
             className="popup__input popup__input_type_title" type="text" placeholder="Название" 
             required minLength="2" maxLength="30" />
     <span className="input-name-error popup__input-error"></span>
-    <input ref={inputLinkRef} defaultValue={''}  id="input-link" name="link" className="popup__input popup__input_type_link" 
+    <input ref={inputLinkRef} defaultValue={''}  id="input-link" name="link" 
+            className="popup__input popup__input_type_link" 
             type="url" placeholder="Ссылка на картинку" required />
     <span className="input-link-error popup__input-error"></span>
   </PopupWithForm>

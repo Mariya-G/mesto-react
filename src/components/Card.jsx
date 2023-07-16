@@ -28,7 +28,7 @@ const Card = (props) => {
         <div className="element__wrap">
           <h2 className="element__title">{props.card.name}</h2>
           <div className="element__wrap-likes">
-            <button onClick={handleLikeClick} className={cardLikeButtonClassName} type="button"></button>
+            <button onClick={handleLikeClick} className={cardLikeButtonClassName} type="button"/>
             <span className="element__likes-number">{props.card.likes.length}</span>
           </div>
         </div>
